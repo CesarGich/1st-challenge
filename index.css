@@ -1,0 +1,143 @@
+*{
+    font-family: 'Inter', sans-serif;
+    font-size: 32px;
+    box-sizing: border-box;
+    margin: 0;
+}
+
+body {
+    color: darkblue;
+    width: 100vw;
+    background: #F3F5FC;
+}
+
+.logo {
+    position: absolute;
+    width: 120px;
+    height: 48px;
+    left: 10px;
+    top: 10px;
+}
+
+main {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: stretch;
+    align-content: stretch;
+    row-gap: 10px;
+    width: 80%;
+    margin: 5% auto 0 auto;
+
+    
+}
+
+
+.message-section {
+    background-color: white;
+    background-image: url(images/Muñeco.png);
+    background-repeat: no-repeat;
+    background-position: 50% 20%;
+    background-size: 80%;
+    border-radius: 3%;
+    box-shadow: 0px 24px 32px -8px rgba(0, 0, 0, 0.08);
+}
+
+
+.text-area {
+    resize: none;
+    margin-top: 20px;
+    margin-left: 24px;
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 150%;
+    color: #0A3871;
+    border: none;
+    background: none
+}
+
+.text-area:focus {
+    outline: none;
+}
+
+.text-area::placeholder{
+    color: #0A3871;
+}
+
+.message {
+    background: none;
+    resize: none;
+    border: none;
+}
+
+.message:focus {
+    outline: none;
+}
+
+.empty-text {
+    text-align: center;
+    width: 80%;
+    margin: 0 auto;
+    background: none;
+}
+
+h1 {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+p {
+    margin-top: 10px;
+    font-size: 16px;
+    font-weight: 400;
+}
+
+
+
+h6 {
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 150%;
+    color: #495057;
+    opacity: 0.8;
+    margin-left: 24px;
+    margin-bottom: 10px;
+
+}
+
+
+.buttons {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding: 0px;
+    gap: 24px;
+    width: 680px;
+    height: 67px;
+    margin-bottom: 20px;
+    
+}
+
+.btn {
+    display: flex;
+    gap: 8px;
+    width: 300px;
+    height: 67px;
+    justify-content: center;
+    border-radius: 25px;
+    font-size: 0.5em;
+    padding: 24px;
+    cursor: pointer;
+}
+
+.encrypt {
+    background: #0A3871;
+    color: #D8DFE8;
+}
+
+.decrypt {
+    background: #D8DFE8;
+    border: 1px solid #0A3871;
+    color: #0A3871;
+}

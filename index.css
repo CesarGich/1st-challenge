@@ -1,95 +1,116 @@
 *{
-    font-family: 'Inter', sans-serif;
-    font-size: 32px;
     box-sizing: border-box;
     margin: 0;
+    padding: 0;
+    font-family: 'Inter', sans-serif;
+    font-size: 1.6rem;
+    user-select: none;
+}
+
+html {
+    font-size: 62.5%;
 }
 
 body {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
     color: darkblue;
-    width: 100vw;
+    min-height: 100vh;
     background: #F3F5FC;
+    background-repeat: no-repeat;
+    text-align: center;
+}
+
+.header {
+    display: flex;
+    align-items: start;
 }
 
 .logo {
-    position: absolute;
     width: 120px;
     height: 48px;
-    left: 10px;
-    top: 10px;
 }
 
-main {
+
+
+.main {
     display: flex;
-    flex-direction: row;
-    flex-wrap: nowrap;
-    justify-content: center;
-    align-items: stretch;
-    align-content: stretch;
-    row-gap: 10px;
-    width: 80%;
-    margin: 5% auto 0 auto;
-
-    
+    padding: 0;
 }
 
 
-.message-section {
-    background-color: white;
-    background-image: url(images/Muñeco.png);
-    background-repeat: no-repeat;
-    background-position: 50% 20%;
-    background-size: 80%;
-    border-radius: 3%;
-    box-shadow: 0px 24px 32px -8px rgba(0, 0, 0, 0.08);
+textarea::-webkit-scrollbar{
+    display: none;
+  }
+
+.main-bloc1 {
+    width: 100%;
+    padding: 2rem;
 }
 
-
-.text-area {
-    resize: none;
-    margin-top: 20px;
-    margin-left: 24px;
-    font-weight: 400;
-    font-size: 32px;
-    line-height: 150%;
-    color: #0A3871;
+.main-bloc1 textarea {
+    width: 100%;
+    height: 300px;
     border: none;
-    background: none
+    padding: 2rem 2rem 2rem;
+    outline: none;
+    font-size: 2rem;
+    color: darkblue;
+    resize: none;
+    border-radius: .5rem;
+    background: #F3F5FC;
+    font-size: 1.8rem;
 }
 
-.text-area:focus {
-    outline: none;
-}
 
 .text-area::placeholder{
     color: #0A3871;
 }
 
-.message {
-    background: none;
-    resize: none;
-    border: none;
+.informacion {
+    display: flex;
+    gap: 1rem;
 }
 
-.message:focus {
-    outline: none;
+.informacion p {
+    font-size: 1rem;
 }
 
-.empty-text {
-    text-align: center;
+.main-bloc2 {
+    display: flex;
+    flex-direction: column;
+    padding: 3rem 1.5rem;
+}
+
+.img-muneco {
     width: 80%;
-    margin: 0 auto;
-    background: none;
+    margin-bottom: 2rem;
 }
+
+
+
+.container-textarea {
+    display: flex;
+    height: 100%;
+    flex-direction: column;
+    gap: 2rem;
+    padding: 1.5rem;
+    border-radius: 1rem;
+    background: white;
+}
+
+
 
 h1 {
-    font-size: 24px;
+    font-size: 2.4rem;
     font-weight: bold;
 }
 
 p {
-    margin-top: 10px;
-    font-size: 16px;
+    margin-top: 1rem;
+    font-size: 1.6rem;
     font-weight: 400;
 }
 
@@ -97,7 +118,7 @@ p {
 
 h6 {
     font-weight: 400;
-    font-size: 12px;
+    font-size: 1.5rem;
     line-height: 150%;
     color: #495057;
     opacity: 0.8;
@@ -108,26 +129,25 @@ h6 {
 
 
 .buttons {
+    font-size: 3rem;
     display: flex;
     flex-direction: row;
     justify-content: center;
     padding: 0px;
-    gap: 24px;
-    width: 680px;
-    height: 67px;
-    margin-bottom: 20px;
+    gap: 2.4rem;
+ 
+    margin-bottom: 2.0rem;
     
 }
 
 .btn {
     display: flex;
-    gap: 8px;
-    width: 300px;
-    height: 67px;
+    gap: 0.8rem;
+    width: 100%;
     justify-content: center;
     border-radius: 25px;
     font-size: 0.5em;
-    padding: 24px;
+    padding: 1rem;
     cursor: pointer;
 }
 

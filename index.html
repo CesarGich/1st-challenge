@@ -9,27 +9,50 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-</head>
-<header>
-    <img class="logo" src="images/Logo.png" alt="logo de Alura">
-</header>    
+</head>  
+
 <body>
-    <main>
-        <section class="text-area-section">
-            <textarea class="text-area" cols="30" rows="10" placeholder="Ingrese el texto aquí"></textarea>
+    <header class="header">
+    </header>  
+    <main class="main">
+        <div class="divlogo">
+            <img class="logo" src="images/Logo.png" alt="logo de Alura">
+        </div>
+        <section class="main-bloc1">
+            <textarea id="text-area" class="text-area" cols="30" rows="10" placeholder="Ingrese el texto aquí"></textarea>
+            
             <div class="informacion">
                 <h6><i class="fa fa-exclamation-circle" style="font-size:16px"></i> Sólo letras minúsculas y sin acento</h6>
             </div>
+
             <div class="buttons">
-                <button class="btn encrypt">Encriptar</button>
-                <button class="btn decrypt">Desencriptar</button>
+                <button id="encrypt" class="btn encrypt">Encriptar</button>
+                <button id="decrypt" class="btn decrypt">Desencriptar</button>
             </div>
         </section>
-        <section class="message-section">
-            <textarea class="message" cols="20" rows="10"></textarea>
-            <div class="empty-text">
-                <h1>Ningún mensaje fue encontrado</h1>
-                <p>Ingresa el texto que desees encriptar o desencriptar</p>
+
+        <section class="main-bloc2">
+            <div class="container-textarea">
+
+                <article class="aviso" id="aviso">
+                    <img class="img-muneco" src="images/Muñeco.png">
+                    <h1>Ningún mensaje fue encontrado</h1>
+                    <p>Ingresa el texto que desees encriptar o desencriptar</p>
+                </article>
+
+                <!-- por completar, resultados
+                
+                <div class="resultados novisible" id =""
+                <textarea id="resultado"></textarea>
+                <button class="button button--copy" onclick="copiarResultado()" id="copyButton">
+                    <p class="primario">Copiar</p>
+                </button>
+                <div/>
+                
+                -->
+
+                
+
             </div>
             
             <!-- <div class="">
@@ -37,5 +60,6 @@
             </div> -->
         </section>
     </main>
+<script src="encriptador.js" ></script>
 </body>
 </html>
